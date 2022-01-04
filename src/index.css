@@ -1,13 +1,78 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.to-do-holder {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.to-do-container {
+  background-color: beige;
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-to-do-container {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.edit-button {
+  display: block;
+  margin-left: 25px;
+}
+.delete-button {
+  width: 100px;
+  height: 45px;
+  margin: 35px 20px 10px 0;
+}
+textarea {
+  border: none;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+textarea:disabled {
+  background-color: wheat;
+}
+
+.container {
+  display: flex;
+}
+
+.bg-green {
+  background-color: turquoise;
+}
+.bg-green textarea:disabled {
+  background-color: rgb(152, 228, 220);
 }
